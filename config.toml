@@ -1,5 +1,6 @@
 baseURL = 'http://idioptic.pages.dev/'
 languageCode = 'en-us'
+theme = 'm10c'
 title = 'idioptic - simplified engineering'
 author = 'Joshua Marcum'
 description = 'Owner'
