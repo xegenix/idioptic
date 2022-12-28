@@ -1,26 +1,61 @@
-baseURL = 'http://idioptic.pages.dev/'
-languageCode = 'en-us'
-theme = 'm10c'
-title = 'idioptic - simplified engineering'
-author = 'Joshua Marcum'
-description = 'Owner'
-avatar = ''
-menu_item_seperator = '|'
-favicon = ''
+baseURL = "https://idioptic.pages.dev/"
+title = "Idioptic"
 
-[[menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
 
-[[params.social]]
-  icon = "github"
-  name = "GitHub"
-  url = "https://github.com/xegenix"
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+paginate = 9
+darkmode_js = ["assets/js/darkmode.js"]
+enableInlineShortcodes = true
 
-[params.style]
-  darkestColor = "#d35050"
-  darkColor = "#212121"
-  lightColor = "#f5e3e0"
-  lightestColor = "#f5f5f5"
-  primaryColor = "#ffffff"
+[params]
+author = "Joshua Marcum"
+authorimage = "../assets/images/global/author.webp"
+github = "https://github.com/xegenix"
+facebook = ""
+og_image = "/images/tailbliss-cover.png"
+sitename = "Idioptic"
+twitter = "@polyzombic"
+description = "Simplified Engineering"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+category = "Categories"
+tag = "Tags"
+
+[privacy]
+[privacy.disqus]
+disable = false
+[privacy.googleAnalytics]
+anonymizeIP = true
+disable = false
+respectDoNotTrack = false
+useSessionStorage = false
+[privacy.instagram]
+disable = false
+simple = false
+[privacy.twitter]
+disable = false
+enableDNT = false
+simple = false
+[privacy.vimeo]
+disable = false
+enableDNT = false
+simple = false
+[privacy.youtube]
+disable = false
+privacyEnhanced = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.105.0"
+    max = "0.105.0"
